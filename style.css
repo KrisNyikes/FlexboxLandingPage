@@ -14,6 +14,15 @@ body{
     background-color: #1f2937;
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    color: #e5e7eb;
+    font-size: 12px;
+}
+
 .upper-header{
     display: flex;
     justify-content: space-between;
@@ -38,6 +47,7 @@ a{
 }
 
 .main-header{
+    flex: 1;
     display: flex;
     margin:  24px 10% 10% 10%;
 }
@@ -46,16 +56,89 @@ a{
     margin-right: 32px;
     color: #e5e7eb;
     font-size: 18px;
+    padding-right: 32px;
 }
 
 .main-header-text h1, p, button{
     padding: 8px 0;
 }
 
-.main-header-text button{
+.main-header-text button, .sign-up-container button{
     background-color: #3882f6;
     color: #e5e7eb;
     padding: 5px 20px;
     border-radius: 5px;
     border-width: 0px;
+}
+
+.information-container{
+    flex: 1;
+    display: flex;
+    margin: 0 15% 5% 15%;
+    gap: 32px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.information-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.inf-item img{
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+}
+
+.quote-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%;
+    background-color: #e5e7eb;
+    font-style: italic;
+    font-weight: 400;
+    color: #1f2937;
+}
+
+.quote-container blockquote, .author{
+    margin: 0 10%; 
+}
+
+.author{
+    align-self: flex-end;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sign-up-container{
+    background-color: #3882f6;
+    margin: 5% 10%;
+    padding: 24px 32px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-up-container button{
+    border: 1px solid #f9faf8;
+}
+
+.sign-up-container .text, .text-main{
+    margin: 0 10%;
+    font-size: 12px;
+    color: #f9faf8;
+}
+
+.text-main{
+    font-size: 16px;
+    font-weight: 700;
 }
